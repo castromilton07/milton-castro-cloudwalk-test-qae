@@ -4,13 +4,13 @@
 ---
 ## Project context
 
-This project consists of a technical challenge/test for a Quality Assurance Engineer position at CloudWalk, and consists of developing a Quake Arena 3 Server game log analyzer, the source code developed must be able to read the log file , group the data by match, collect data (match, players, deaths), calculate scores to classify players by score, and allow this information to be consulted through a report. As a bonus, a by death mean report generator can be implemented.
+This project consists of a technical challenge/test for a Quality Assurance Engineer position at CloudWalk, and consists of developing a Quake Arena 3 Server game log parser, the source code developed must be able to read the log file, group the data by match, collect data (match, players, deaths), calculate scores to classify players by score (ranking), and allow this information to be consulted through a report. As a bonus, a by death mean report generator can be implemented.
 
 This technical challenge will have as evaluation criteria:
 - Accuracy and readability of the implemented code;
-- Git skills, very descriptive commit messages and fragmentation;
-- Source code and Readme documentation;
-- Testability, test tools used and test coverage.
+- Git skills, descriptive commit messages and fragmentation;
+- Source code and readme.md documentation;
+- Testability, test frameworks and test coverage.
 
 The application can be developed in any programming language.
 
@@ -20,7 +20,7 @@ The application can be developed in any programming language.
 ### Prerequisites:
 - [python](https://www.python.org/downloads/)
 
-1. Clone the repository (HTTPS or SSH) and enter the project folder
+1. Clone the repository (HTTPS or SSH) and enter in the project folder
 - Git Clone ou Download
     - HTTPS `git clone https://github.com/castromilton07/milton-castro-cloudwalk-test-qae.git`
     - SSH `git clone git@github.com:castromilton07/milton-castro-cloudwalk-test-qae.git`.
@@ -28,11 +28,11 @@ The application can be developed in any programming language.
 - `cd milton-castro-cloudwalk-test-qae`
 
 2. Create the virtual environment for the project
-    - From the project root:
+    - From the project root folder:
 - `python3 -m venv .venv && source .venv/bin/activate`
 
 3. Install dependencies
-    - From the project root:
+    - From the project root folder:
 - `python3 -m pip install -r dev-requirements.txt`
 
 ---
