@@ -1,7 +1,7 @@
 # Import used to run pytest, without complete path, test doesn't work
 # Please comment the last import
 
-# from quake_log_parser.reports.repsort import Report
+# from quake_log_parser.reports.report import Report
 
 # Import used to run the program (main.py), with complete path, program
 # doesn't work
