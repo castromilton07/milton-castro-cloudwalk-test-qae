@@ -48,7 +48,8 @@ def option_0():
 
 def option_1():
     report_instance = ByDeathMeanReport
-    report_instance.generate(ranking_by_death)
+    by_death_report = report_instance.generate(ranking_by_death)
+    return print(by_death_report)
 
 
 def option_2():
