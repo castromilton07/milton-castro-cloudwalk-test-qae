@@ -89,6 +89,7 @@ if __name__ == "__main__":
         sys.stderr.write("Invalid option\n")
 
 
+# Method used only for testing (tests/test_main.py)
 def show_menu():
     sys.stdout.write(menu)
     option = input()

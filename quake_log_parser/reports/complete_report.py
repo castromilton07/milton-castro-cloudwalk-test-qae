@@ -11,6 +11,7 @@ from reports.report import Report
 
 
 class CompleteReport(Report):
+    # Method to generate the complete report
     def generate(ranking_dict, ranking_by_death_dict):
         report_message = ""
         by_death_mean_message_list = list()

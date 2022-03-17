@@ -11,6 +11,7 @@ from reports.report import Report
 
 
 class DefaultReport(Report):
+    # Method to generate the default report
     def generate(ranking_dict):
         report_message = ""
         for index, match in enumerate(ranking_dict.values()):

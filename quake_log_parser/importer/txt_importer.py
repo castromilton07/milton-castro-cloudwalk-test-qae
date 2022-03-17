@@ -21,6 +21,8 @@ kill = "Kill:"
 
 
 class TxtImporter(Importer):
+    # Method to import the log file and perform a filter to reduce
+    # the raw file to more important data for analysis
     def import_data(path):
         if path[-3:] == 'log':
             with open(path, mode="r") as file:
@@ -33,6 +35,7 @@ class TxtImporter(Importer):
         else:
             raise ValueError('Invalid file')
 
+    # Method to extract the range of the lines of each match
     def prepare_to_divide_by_match(log):
         init_lines = list()
         total_matches = 0
@@ -45,6 +48,7 @@ class TxtImporter(Importer):
         init_lines.append(len(log))
         return(init_lines, total_matches)
 
+    # Method to group log records by match | Creating a list of lists (array of arrays)
     def divide_log_by_match(log, init_lines, total_matches):
         match_data_list = []
         for index in range(total_matches):
@@ -54,6 +58,8 @@ class TxtImporter(Importer):
             match_data_list.append(match_data)
         return match_data_list
 
+    # Method to create a dictionary with the information of each match
+    # JSON similar format
     def create_ranking_dict(log_by_match, total_matches):
         ranking = dict()
         match = dict()
@@ -80,6 +86,7 @@ class TxtImporter(Importer):
             ranking.update({f"game_{index + 1}": match})
         return ranking
 
+    # Method to add each player's score for each round
     def add_score_to_ranking(ranking, log_by_match, total_matches):
         ranking_aux = dict()
         for index in range(total_matches):
@@ -106,6 +113,7 @@ class TxtImporter(Importer):
                         ranking[f"game_{index + 1}"]["kills"][score[0]] = score[1]
                 score_count = 0
 
+    # Method to create a dictionary with death means quantity information by rounds
     def create_ranking_by_death_dict(log_by_match, total_matches):
         ranking_by_death = dict()
         for index in range(total_matches):

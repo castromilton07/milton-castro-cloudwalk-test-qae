@@ -11,6 +11,7 @@ from reports.report import Report
 
 
 class ByDeathMeanReport(Report):
+    # Method to generate the by death mean report
     def generate(ranking_by_death_dict):
         report_message = ""
         for index, match in enumerate(ranking_by_death_dict.values()):
