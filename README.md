@@ -36,6 +36,68 @@ The application can be developed in any programming language.
 - `python3 -m pip install -r dev-requirements.txt`
 
 ---
+## How to use
+
+### Prerequisites:
+- Command Prompt: bash, zsh, cmd, ps
+
+1. Run with python the main.py file located in the path `quake_log_parser/main.py` from the project root folder
+    - From the project root folder:
+- `python3 quake_log_parser/main.py`
+
+2. Enter one of the options between 0 and 5
+```
+    Select one of the options below:
+    0 - Default report (total kills, players, kills ranking);
+    1 - Report by death mean (kills by means);
+    2 - Complete report;
+    3 - Dictionary/JSON of Default Report;
+    4 - Dictionary/JSON of By Death Mean Report;
+    5 - Exit.
+    ->
+```
+<p align="center">
+  <img src="https://bit.ly/01-execution_menu" alt="Execution menu" width="400px">
+</p>
+
+### Outputs
+    -  Option 0
+        - Default report (total kills, players, kills ranking)
+<p align="center">
+  <img src="https://bit.ly/02-option_0" alt="Option 0" width="400px">
+</p>
+
+    -  Option 1
+        - Report by death mean (kills by means)
+<p align="center">
+  <img src="https://bit.ly/03-option_1" alt="Option 0" width="400px">
+</p>
+
+    -  Option 2
+        - Complete report
+<p align="center">
+  <img src="https://bit.ly/04-option_2" alt="Option 0" width="400px">
+</p>
+
+    -  Option 3
+        - Dictionary/JSON of Default Report
+<p align="center">
+  <img src="https://bit.ly/05-option_3" alt="Option 0" width="1200px">
+</p>
+
+    -  Option 4
+        - Dictionary/JSON of By Death Mean Report
+<p align="center">
+  <img src="https://bit.ly/06-option_4" alt="Option 0" width="1200px">
+</p>
+
+    -  Option 5
+        - Exit
+<p align="center">
+  <img src="https://bit.ly/07-option_5" alt="Option 0" width="400px">
+</p>
+
+---
 ## Structure of files and directories
 This repository is organized with the following directory and file structure:
 
