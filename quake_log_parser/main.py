@@ -1,7 +1,20 @@
+# Import used to run pytest, without complete path, test doesn't work
+# Please comment the last 4 imports
+
+# from quake_log_parser.reports.by_death_mean_report import ByDeathMeanReport
+# from quake_log_parser.reports.complete_report import CompleteReport
+# from quake_log_parser.reports.default_report import DefaultReport
+# from quake_log_parser.importer.txt_importer import TxtImporter
+
+# Import used to run the program (main.py), with complete path, program
+# doesn't work
+# Please comment the first 4 imports
+
 from reports.by_death_mean_report import ByDeathMeanReport
 from reports.complete_report import CompleteReport
 from reports.default_report import DefaultReport
 from importer.txt_importer import TxtImporter
+
 import sys
 
 
