@@ -131,6 +131,116 @@ This repository is organized with the following directory and file structure:
 ```
 
 ---
+## Results
+
+### Dictionaries / JSON
+
+1. Default Report
+```json
+{
+    "game_1": {
+        "total_kills": 0,
+        "players": ["Isgalamido"],
+        "kills": {
+            "Isgalamido": 0,
+        },
+    },
+    "game_2": {
+        "total_kills": 11,
+        "players": ["Dono da Bola", "Isgalamido", "Mocinha"],
+        "kills": {
+            "Isgalamido": -7,
+            "Dono da Bola": 0,
+            "Mocinha": 0,
+        },
+    },
+    "game_3": {
+        "total_kills": 4,
+        "players": ["Dono da Bola", "Isgalamido", "Mocinha", "Zeh"],
+        "kills": {
+            "Zeh": -2,
+            "Dono da Bola": -1,
+            "Mocinha": 0,
+            "Isgalamido": 1,
+        },
+    },
+    "game_4": {
+        "total_kills": 105,
+        "players": ["Assasinu Credi", "Dono da Bola", "Isgalamido", "Zeh"],
+        "kills": {
+            "Dono da Bola": 9,
+            "Assasinu Credi": 12,
+            "Isgalamido": 19,
+            "Zeh": 20,
+        },
+    },
+    ...
+    ...
+    ...
+    "game_21": {
+        "total_kills": 131,
+        "players": ["Assasinu Credi", "Dono da Bola", "Isgalamido", "Mal", "Oootsimo", "Zeh"],
+        "kills": {
+            "Mal": 6,
+            "Dono da Bola": 12,
+            "Assasinu Credi": 16,
+            "Isgalamido": 17,
+            "Zeh": 19,
+            "Oootsimo": 21,
+        },
+    },
+}
+```
+
+2. By Death Mean Report
+```json
+{
+    "game-1": {
+        "kills_by_means": {}
+    },
+    "game-2": {
+        "kills_by_means": {
+            "MOD_TRIGGER_HURT": 7,
+            "MOD_ROCKET_SPLASH": 3,
+            "MOD_FALLING": 1,
+        },
+    },
+    "game-3": {
+        "kills_by_means": {
+            "MOD_TRIGGER_HURT": 2,
+            "MOD_FALLING": 1,
+            "MOD_ROCKET": 1,
+        },
+    },
+    "game-4": {
+        "kills_by_means": {
+            "MOD_ROCKET_SPLASH": 51,
+            "MOD_ROCKET": 20,
+            "MOD_FALLING": 11,
+            "MOD_TRIGGER_HURT": 9,
+            "MOD_RAILGUN": 8,
+            "MOD_MACHINEGUN": 4,
+            "MOD_SHOTGUN": 2,
+        },
+    },
+    ...
+    ...
+    ...
+    "game-21": {
+        "kills_by_means": {
+            "MOD_ROCKET_SPLASH": 60,
+            "MOD_ROCKET": 37,
+            "MOD_TRIGGER_HURT": 14,
+            "MOD_RAILGUN": 9,
+            "MOD_SHOTGUN": 4,
+            "MOD_MACHINEGUN": 4,
+            "MOD_FALLING": 3,
+        },
+    },
+}
+```
+
+---
 ##  <img src="https://bit.ly/handshake-gif" height="25px"/> Contact information
 <p align="center"><a href="https://www.linkedin.com/in/milton-castro/"><img src="https://bit.ly/perfil_150px"/></a></p>
 <p align="center">Milton Castro</p>
