@@ -1,5 +1,7 @@
 # Welcome to the CloudWalk Test QAE Repository
 ### [milton-castro-cloudwalk-test-qae]
+> Truth can only be found in one place: the code. <br/>
+> -- Robert C. Martin
 
 ---
 ## Project context
