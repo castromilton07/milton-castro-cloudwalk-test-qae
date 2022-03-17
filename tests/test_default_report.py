@@ -13,37 +13,32 @@ def dict():
 
 def test_validate_default_report_return_match_number_correctly(dict):
     report = DefaultReport.generate(dict)
-    assert " Match: 21" in report
+    expected = " Match: 21"
+    assert expected in report
 
 
 def test_validate_default_report_return_total_kills_correctly(dict):
     report = DefaultReport.generate(dict)
-    assert " Total Kills in Match: 131" in report
+    expected = " Total Kills in Match: 131"
+    assert expected in report
 
 
 def test_validate_default_report_return_players_correctly(dict):
     report = DefaultReport.generate(dict)
-    assert " Players: Assasinu Credi, Dono da Bola, Isgalamido, Mal, Oootsimo, Zeh" in report
+    expected = " Players: Assasinu Credi, Dono da Bola, Isgalamido, Mal, Oootsimo, Zeh"
+    assert expected in report
 
 
 def test_validate_default_report_return_ranking_correctly(dict):
     report = DefaultReport.generate(dict)
-    expected = (
-        " Ranking:"
-        "    Mal: 6"
-        "    Dono da Bola: 12"
-        "    Assasinu Credi: 16"
-        "    Isgalamido: 17"
-        "    Zeh: 19"
-        "    Oootsimo: 21"
-
-    )
+    expected = "Ranking:\n    Mal: 6\n    Dono da Bola: 12\n    Assasinu Credi: 16\n    Isgalamido: 17\n    Zeh: 19\n    Oootsimo: 21"
     assert expected in report
 
 
 def test_validate_default_report_return_correct_format(dict):
     report = DefaultReport.generate(dict)
-    expected_mock = """--------------------------------------
+    expected = """
+--------------------------------------
  Match: 1
  Total Kills in Match: 0
  Players: Isgalamido
@@ -273,5 +268,4 @@ def test_validate_default_report_return_correct_format(dict):
     Isgalamido: 17
     Zeh: 19
     Oootsimo: 21"""
-    expected = expected_mock
     assert expected == report
