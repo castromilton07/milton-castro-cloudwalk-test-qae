@@ -54,7 +54,8 @@ def option_1():
 
 def option_2():
     report_instance = CompleteReport
-    report_instance.generate(ranking, ranking_by_death)
+    complete_report = report_instance.generate(ranking, ranking_by_death)
+    return print(complete_report)
 
 
 def option_3():
