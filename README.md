@@ -78,7 +78,7 @@ The application can be developed in any programming language.
     -  Option 2
         - Complete report
 <p align="center">
-  <img src="https://bit.ly/04-option_2" alt="Option 0" width="400px">
+  <img src="https://bit.ly/04-option_2-2" alt="Option 0" width="400px">
 </p>
 
     -  Option 3
