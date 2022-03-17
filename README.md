@@ -1,43 +1,43 @@
-# Boas Vindas ao Repositório CloudWalk Test QAE
+# Welcome to the CloudWalk Test QAE Repository
 ### [milton-castro-cloudwalk-test-qae]
 
 ---
 ## Contexto do Projeto
 
-Este projeto consiste em desafio técnico/teste para uma vaga de Engenheiro de Garantia de Qualidade na empresa CloudWalk, e consiste em elaborar um analizador de log do jogo Quake Arena 3 Server, o código-fonte desenvolvido deverá ser capaz de ler o arquivo de log, agrupar os dados por partida, coletar dodos (partida, jogadores, mortes), calcular pontuação para classificar jogadores por pontuação, e permitir que essas informações sejam consultadas através de relatório. Como forma de bônus, poderá ser implementado um gerador de relatório por causa de morte ("by death mean").
+This project consists of a technical challenge/test for a Quality Assurance Engineer position at CloudWalk, and consists of developing a Quake Arena 3 Server game log analyzer, the source code developed must be able to read the log file , group the data by match, collect data (match, players, deaths), calculate scores to classify players by score, and allow this information to be consulted through a report. As a bonus, a by death mean report generator can be implemented.
 
-Esse desafio técnico terá como critérios de avaliação:
-- Precisão e legibilidade do código implementado;
-- Habilidades com o Git, mensagens de commit bem descritivas e fragmentação;
-- Documentação do código-fonte e do Leia-me;
-- Testabilidade, ferramentas de teste utilizadase e cobertura de testes.
+This technical challenge will have as evaluation criteria:
+- Accuracy and readability of the implemented code;
+- Git skills, very descriptive commit messages and fragmentation;
+- Source code and Readme documentation;
+- Testability, test tools used and test coverage.
 
-A aplicação pode ser desenvolvida em qualquer linguagem de programação.
+The application can be developed in any programming language.
 
 ---
-## Como instalar
+## How to install
 
-### Pre-requisitos:
+### Prerequisites:
 - [python](https://www.python.org/downloads/)
 
-1. Clone o repositório (HTTPS ou SSH) e entrar na pasta do projeto
+1. Clone the repository (HTTPS or SSH) and enter the project folder
 - Git Clone ou Download
     - HTTPS `git clone https://github.com/castromilton07/milton-castro-cloudwalk-test-qae.git`
     - SSH `git clone git@github.com:castromilton07/milton-castro-cloudwalk-test-qae.git`.
     - [Download ZIP](https://github.com/castromilton07/milton-castro-cloudwalk-test-qae/archive/refs/heads/main.zip)
 - `cd milton-castro-cloudwalk-test-qae`
 
-2. Crie o ambiente virtual para o projeto
-    - A partir da raiz do projeto:
+2. Create the virtual environment for the project
+    - From the project root:
 - `python3 -m venv .venv && source .venv/bin/activate`
 
-3. Instalar dependências e iniciar o Front-end
-    - A partir da raiz do projeto:
+3. Install dependencies
+    - From the project root:
 - `python3 -m pip install -r dev-requirements.txt`
 
 ---
-## Estrutura de arquivos e diretórios
-Este repositório está organizado com a seguinte estrutura de diretórios e arquivos:
+## Structure of files and directories
+This repository is organized with the following directory and file structure:
 
 ```
 .
@@ -69,7 +69,7 @@ Este repositório está organizado com a seguinte estrutura de diretórios e arq
 ```
 
 ---
-##  <img src="https://bit.ly/handshake-gif" height="25px"/> Informações de contato
+##  <img src="https://bit.ly/handshake-gif" height="25px"/> Contact information
 <p align="center"><a href="https://www.linkedin.com/in/milton-castro/"><img src="https://bit.ly/perfil_150px"/></a></p>
 <p align="center">Milton Castro</p>
 <p align="center">
