@@ -2,7 +2,7 @@
 ### [milton-castro-cloudwalk-test-qae]
 
 ---
-## Contexto do Projeto
+## Project context
 
 This project consists of a technical challenge/test for a Quality Assurance Engineer position at CloudWalk, and consists of developing a Quake Arena 3 Server game log analyzer, the source code developed must be able to read the log file , group the data by match, collect data (match, players, deaths), calculate scores to classify players by score, and allow this information to be consulted through a report. As a bonus, a by death mean report generator can be implemented.
 
