@@ -42,7 +42,8 @@ ranking_by_death = import_instance.create_ranking_by_death_dict(log_by_match, to
 
 def option_0():
     report_instance = DefaultReport
-    report_instance.generate(ranking)
+    default_report = report_instance.generate(ranking)
+    return print(default_report)
 
 
 def option_1():
