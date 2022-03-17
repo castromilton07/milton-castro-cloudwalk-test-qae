@@ -87,3 +87,12 @@ if __name__ == "__main__":
         options[option]()
     else:
         sys.stderr.write("Invalid option\n")
+
+
+def show_menu():
+    sys.stdout.write(menu)
+    option = input()
+    if option in options.keys():
+        options[option]()
+    else:
+        sys.stderr.write("Invalid option\n")
