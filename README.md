@@ -63,38 +63,38 @@ The application can be developed in any programming language.
 </p>
 
 ### Outputs
-    -  Option 0
-        - Default report (total kills, players, kills ranking)
+  -  Option 0
+      - Default report (total kills, players, kills ranking)
 <p align="center">
   <img src="https://bit.ly/02-option_0" alt="Option 0" width="400px">
 </p>
 
-    -  Option 1
-        - Report by death mean (kills by means)
+  -  Option 1
+      - Report by death mean (kills by means)
 <p align="center">
   <img src="https://bit.ly/03-option_1" alt="Option 0" width="400px">
 </p>
 
-    -  Option 2
-        - Complete report
+  -  Option 2
+      - Complete report
 <p align="center">
   <img src="https://bit.ly/04-option_2-2" alt="Option 0" width="400px">
 </p>
 
-    -  Option 3
-        - Dictionary/JSON of Default Report
+  -  Option 3
+      - Dictionary/JSON of Default Report
 <p align="center">
   <img src="https://bit.ly/05-option_3" alt="Option 0" width="1200px">
 </p>
 
-    -  Option 4
-        - Dictionary/JSON of By Death Mean Report
+  -  Option 4
+      - Dictionary/JSON of By Death Mean Report
 <p align="center">
   <img src="https://bit.ly/06-option_4" alt="Option 0" width="1200px">
 </p>
 
-    -  Option 5
-        - Exit
+  -  Option 5
+      - Exit
 <p align="center">
   <img src="https://bit.ly/07-option_5" alt="Option 0" width="400px">
 </p>
@@ -131,6 +131,100 @@ This repository is organized with the following directory and file structure:
 ├── setup.cfg
 └── setup.py
 ```
+
+---
+## Tests
+- To run the tests, you must have the virtual environment active and have the dependencies installed
+    - From the project root folder:
+      - `python3 -m venv .venv && source .venv/bin/activate`
+      - `python3 -m pip install -r dev-requirements.txt`
+  - Before running any test commands, you need to uncomment full path imports and comment out relative path imports
+    - Invert the imports as explained above in the following files:
+      - `/quake_log_parser/importer/txt_importer.py`
+      - `/quake_log_parser/reports/default_report.py`
+      - `/quake_log_parser/reports/by_death_mean_report.py`
+      - `/quake_log_parser/reports/complete_report.py`
+      - `/quake_log_parser/main.py`
+    - Example:
+      - Full Path Import: `from quake_log_parser.importer.importer import Importer`
+      - Relative Path Import: `from importer.importer import Importer`
+
+### Execution
+1. To run all tests at once
+      -  `python3 -m pytest`
+<p align="center">
+  <img src="https://bit.ly/13-test-all" alt="All tests" width="1200px">
+</p>
+
+2. To run a specific test
+
+  - test_importer
+    -  `python3 -m pytest tests/test_importer.py`
+<p align="center">
+  <img src="https://bit.ly/08-test_1" alt="Test 1" width="1200px">
+</p>
+
+  - test_default_report
+    -  `python3 -m pytest tests/test_default_report.py`
+<p align="center">
+  <img src="https://bit.ly/09-test_2" alt="Test 2" width="1200px">
+</p>
+
+  - test_by_death_mean_report
+    -  `python3 -m pytest tests/test_by_death_mean_report.py`
+<p align="center">
+  <img src="https://bit.ly/10-test_3" alt="Test 3" width="1200px">
+</p>
+
+  - test_complete_report
+    -  `python3 -m pytest tests/test_complete_report.py`
+<p align="center">
+  <img src="https://bit.ly/11-test_4" alt="Test 4" width="1200px">
+</p>
+
+  - test_main
+    -  `python3 -m pytest tests/test_main.py`
+<p align="center">
+  <img src="https://bit.ly/12-test_5" alt="Test 5" width="1200px">
+</p>
+
+### Coverage
+1. To run and report the coveage of a test
+
+  - test_importer
+    -  `python3 -m coverage run tests/test_importer.py`
+    -  `python3 -m coverage report tests/test_importer.py`
+<p align="center">
+  <img src="https://bit.ly/14-coverage_1" alt="Test 1" width="600px">
+</p>
+
+  - test_default_report
+    -  `python3 -m coverage run tests/test_default_report.py`
+    -  `python3 -m coverage report tests/test_default_report.py`
+<p align="center">
+  <img src="https://bit.ly/15-coverage_2" alt="Test 2" width="600px">
+</p>
+
+  - test_by_death_mean_report
+    -  `python3 -m coverage run tests/test_by_death_mean_report.py`
+    -  `python3 -m coverage report tests/test_by_death_mean_report.py`
+<p align="center">
+  <img src="https://bit.ly/16-coverage_3" alt="Test 3" width="600px">
+</p>
+
+  - test_complete_report
+    -  `python3 -m coverage run tests/test_complete_report.py`
+    -  `python3 -m coverage report tests/test_complete_report.py`
+<p align="center">
+  <img src="https://bit.ly/17-coverage_4" alt="Test 4" width="600px">
+</p>
+
+  - test_main
+    -  `python3 -m coverage run tests/test_main.py`
+    -  `python3 -m coverage report tests/test_main.py`
+<p align="center">
+  <img src="https://bit.ly/18-coverage_5" alt="Test 5" width="600px">
+</p>
 
 ---
 ## Results
@@ -241,6 +335,16 @@ This repository is organized with the following directory and file structure:
     },
 }
 ```
+
+---
+## Next steps
+- Implementation of more unit tests to cover chunks of code not covered yet;
+  - Current situation:
+    - Stmts: 166
+    - Missing: 111
+    - Covered: 55
+    - Coverage: ~37.4% 
+- Achieve at least 70% test coverage.
 
 ---
 ##  <img src="https://bit.ly/handshake-gif" height="25px"/> Contact information
